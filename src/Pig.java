@@ -1,4 +1,4 @@
-public class Pig extends Animal{
+public class Pig extends Animal implements Swimable{
 
 
 
@@ -28,7 +28,7 @@ public class Pig extends Animal{
 
     @Override
     void getInstruktion() {
-        System.out.println("1");
+        System.out.println("1.Сначала уложите на бок");
         System.out.println("2");
         System.out.println("3");
     }
@@ -37,5 +37,10 @@ public class Pig extends Animal{
         this.name = name;
         this.type = type;
         this.age = age;
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Еле плывет");
     }
 }

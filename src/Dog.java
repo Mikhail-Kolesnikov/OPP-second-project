@@ -1,4 +1,4 @@
-public class Dog extends Animal {
+public class Dog extends Animal implements Swimable {
 //
     private int numberOfKnownCommands;
 
@@ -30,5 +30,10 @@ public class Dog extends Animal {
     @Override
     void getInstruktion() {
         System.out.println("Talk slow");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Поплыла");
     }
 }
